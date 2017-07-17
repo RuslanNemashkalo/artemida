@@ -29,7 +29,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
 	 
 	// закрываем подключение
 	mysqli_close($link);
-	header('Location: /artemida/public/login.html');
+	header('Location: /artemida/artemida/public/index.html');
 
 } else {
 	header('Location: /artemida/public/login.html');
