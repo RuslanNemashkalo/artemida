@@ -1,0 +1,5 @@
+<?php 
+	if((strln($_POST['username']) == 0) || (strln($_POST['username']) == 'username')){
+	$error = 'Введите правельнй логин';
+}
+?>
