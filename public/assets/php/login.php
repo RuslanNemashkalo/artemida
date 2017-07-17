@@ -25,13 +25,11 @@ if(isset($_POST['username']) && isset($_POST['password'])){
     if($result)
     {
         echo "<span style='color:blue;'>Данные добавлены</span>";
+		// закрываем подключение
+		mysqli_close($link);
+		header('Location: /artemida/artemida/public/index.html');
+    } else {
+    	echo "Ошибка в подключении БД";
     }
-	 
-	// закрываем подключение
-	mysqli_close($link);
-	header('Location: /artemida/artemida/public/index.html');
-
-} else {
-	header('Location: /artemida/public/login.html');
 }
 ?>
